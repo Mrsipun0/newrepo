@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mike Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/3e2c7b2b4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h2 class="logo">Mike</h2>
+    <nav>
+      <ul>
+        <li><a href="#start">START</a></li>
+        <li><a href="#topics">TOPICS</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#experience">EXPERIENCE</a></li>
+        <li><a href="#references">REFERENCES</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- START -->
+  <section id="start" class="section home">
+    <div class="home-inner container">
+      <div class="profile-pic"></div>
+      <div class="info">
+        <h1>Mike Lee</h1>
+        <p class="subtitle">Professional Front-End Developer</p>
+
+        <div class="details">
+          <p><strong>SPECIALTY</strong> Front-End Development</p>
+          <p><strong>BORN DATE</strong> 1985</p>
+          <p><strong>YEARS EXPERIENCE</strong> 6+</p>
+          <p><strong>CURRENT COMPANY</strong> Envato</p>
+          <p><strong>PREVIOUS COMPANY</strong> Google Inc.</p>
+        </div>
+
+        <div class="buttons">
+          <a class="btn download" href="cv.pdf" download>DOWNLOAD CV</a>
+          <a class="btn contact" href="#contact">CONTACT ME</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section id="topics" class="section">
+    <h2 class="section-title">What I Do</h2>
+    <div class="container grid-3">
+      <div class="card topic-card">
+        <i class="fas fa-laptop-code icon"></i>
+        <h3>Web Development</h3>
+        <p>Fast, responsive, modern web apps with HTML, CSS, JavaScript and React.</p>
+      </div>
+      <div class="card topic-card">
+        <i class="fas fa-paint-brush icon"></i>
+        <h3>UI/UX Design</h3>
+        <p>Clean visual systems and accessible interfaces that users enjoy.</p>
+      </div>
+      <div class="card topic-card">
+        <i class="fas fa-chart-line icon"></i>
+        <h3>Performance</h3>
+        <p>Speed, SEO and accessibility audits with measurable improvements.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="container grid-4">
+      <div class="card skill-card">
+        <h3>Frontend</h3>
+        <p>HTML, CSS, JavaScript, React, Next.js</p>
+      </div>
+      <div class="card skill-card">
+        <h3>Backend</h3>
+        <p>Node.js, Express, MongoDB, MySQL</p>
+      </div>
+      <div class="card skill-card">
+        <h3>Tools</h3>
+        <p>Git, Webpack, Figma, VS Code</p>
+      </div>
+      <div class="card skill-card">
+        <h3>Other</h3>
+        <p>REST APIs, Agile, Responsive Design</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <h2 class="section-title">Experience</h2>
+    <div class="container timeline">
+      <div class="card job">
+        <h3>Front-End Developer <span>@ Envato</span></h3>
+        <span>2018 - Present</span>
+        <p>Built responsive UIs, integrated APIs, and led performance initiatives.</p>
+      </div>
+      <div class="card job">
+        <h3>UI Engineer <span>@ Google Inc.</span></h3>
+        <span>2015 - 2018</span>
+        <p>Improved accessibility and interaction performance at scale.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section id="references" class="section">
+    <h2 class="section-title">Testimonials</h2>
+    <div class="container grid-3">
+      <div class="card ref-card">
+        <p>"Mike is detail-oriented and always delivers maintainable code."</p>
+        <span>- Sarah Johnson, Project Manager</span>
+      </div>
+      <div class="card ref-card">
+        <p>"An innovative developer with strong problem-solving skills."</p>
+        <span>- David Lee, Senior Engineer</span>
+      </div>
+      <div class="card ref-card">
+        <p>"A reliable teammate who ships on time and communicates clearly."</p>
+        <span>- Priya Mehta, Product Lead</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="container projects-grid">
+      <div class="card project-card">
+        <img src="https://via.placeholder.com/800x450" alt="Portfolio">
+        <div class="px">
+          <h3>Portfolio Website</h3>
+          <p>Personal site with smooth navigation and responsive layout.</p>
+        </div>
+      </div>
+      <div class="card project-card">
+        <img src="https://via.placeholder.com/800x450" alt="E-commerce">
+        <div class="px">
+          <h3>E-Commerce Store</h3>
+          <p>React shop with product search, cart, and payments.</p>
+        </div>
+      </div>
+      <div class="card project-card">
+        <img src="https://via.placeholder.com/800x450" alt="Blog">
+        <div class="px">
+          <h3>Blog Platform</h3>
+          <p>Full-stack blog with auth and content management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <form onsubmit="event.preventDefault(); alert('Thanks! I will reach out soon.');">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
